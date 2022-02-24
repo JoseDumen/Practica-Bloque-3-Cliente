@@ -1,0 +1,53 @@
+<div class="areaContenido my-5" id="areaProductos"> <!--área Productos-->
+
+<form class="w-50" name="frmTablasProductos" id="frmTablasProductos">
+    <div class="form-group row">
+      <label for="txtPrecio" class="col-4 col-form-label">Precio</label> 
+      <div class="col-8">
+        <input id="txtPrecio" name="txtPrecio" type="text" class="form-control" placeholder="Introduzca un precio" value="0">
+      </div>
+    </div>
+    <br>
+    <div class="form-group row">
+      <label class="col-4">Orden</label> 
+      <div class="col-8">
+        <div class="custom-control custom-radio custom-control-inline">
+          <input name="radioPrecio" id="radioPrecio_0" type="radio" class="custom-control-input" value="radioAscendente" checked="checked"> 
+          <label for="radioPrecio_0" class="custom-control-label">Mayor de...</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input name="radioPrecio" id="radioPrecio_1" type="radio" class="custom-control-input" value="radioDescente"> 
+          <label for="radioPrecio_1" class="custom-control-label">Menor de...</label>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="form-group row">
+      <label class="col-4">Tipo</label> 
+      <div class="col-8">
+        <div class="custom-control custom-radio custom-control-inline">
+          <input name="radioTipo" id="radioTipo_0" type="radio" class="custom-control-input" value="radioTodos" checked="checked"> 
+          <label for="radioTipo_0" class="custom-control-label">Todos</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input name="radioTipo" id="radioTipo_1" type="radio" class="custom-control-input" value="radioMunecos"> 
+          <label for="radioTipo_1" class="custom-control-label">Muñecos</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input name="radioTipo" id="radioTipo_2" type="radio" class="custom-control-input" value="radioVaritas"> 
+          <label for="radioTipo_2" class="custom-control-label">Varitas</label>
+        </div>
+      </div>
+    </div> 
+    <br>
+    <div class="form-group row">
+      <div class="offset-4 col-8">
+        <input name="botonFiltrar" id="botonFiltrar" type="button" class="btn btn-primary w-25" value="Buscar"/>
+        <input name="botonComprarSeleccionados" id="botonComprarSeleccionados" type="button" class="btn btn-primary w-50" value="Comprar seleccionados"/>
+        <br>
+        <br>
+        <input name="botonLimpiarSeleccionados" id="botonLimpiarSeleccionados" type="button" class="btn btn-primary w-25" value="Limpiar"/>
+      </div>
+    </div>   
+  </form>
+</div>

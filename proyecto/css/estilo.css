@@ -1,0 +1,40 @@
+.areaContenido,#mensaje,#navBarLogueado,#navBarAdmin{
+display: none;
+}
+
+.defaultArea {
+display: block;
+}
+
+.error,.error:focus {
+    background-color:#e5ff00 !important;
+  }
+
+
+#mensaje {
+    padding: 1em;
+    width:20em; 
+    height: auto; 
+    position: absolute;
+    border-radius: 5px;
+    top: 20%; 
+    left: 60%; 
+    border: 2px solid rgb(218, 218, 4);
+    white-space: pre-line;
+  }
+
+.seleccionado{
+  background-color:#1e7894 !important;
+  }
+
+body::after {
+  content: "";
+  background: url("../img/background.jpg");
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}

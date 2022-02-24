@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPotter</title>
+    <script type="text/javascript" src="jquery/jquery-1.11.0.min.js"></script>
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\estilo.css">
+</head>
+<body>
+    
+    <div class="container" id="containerNavs">
+    <div class="row" id="navBarNoLogueado">
+
+    <nav class="nav navbar-dark col-4"> <!--Navbar NO LOGUEADO izquierda-->
+        <div class="btn-group">
+          <a class="nav-link" href="#" id="navHome">Home</a>
+          <button type="button" id="navProducto" class="btn btn-primary" aria-expanded="false">
+            Productos
+          </button>
+        </div>
+      </nav>   <!--Fin Navbar NO LOGUEADO izquierda-->
+
+<div class="col-6"></div>
+
+      <nav class="nav navbar-dark col-2 me-0"> <!--Navbar NO LOGUEADO derecha-->
+        <div class="btn-group">
+          <button type="button" id="navRegistro" class="btn btn-primary" aria-expanded="false">
+            Regístrate
+          </button>
+          <button type="button" id="navIniciarSesion" class="btn btn-primary" aria-expanded="false">
+            Iniciar sesión
+          </button>   
+        </div>
+      </nav> <!--Fin Navbar NO LOGUEADO derecha-->
+   
+   
+    </div>
+
+    <div class="row" id="navBarLogueado">
+
+      <nav class="nav navbar-dark col-4"> <!--Navbar LOGUEADO izquierda-->
+          <div class="btn-group">
+            <a class="nav-link" href="#" id="navHomeLogueado">Home</a>
+            <button type="button" id="navProductoLogueado" class="btn btn-primary" aria-expanded="false">
+              Productos
+            </button>
+          </div>
+        </nav>   <!--Fin Navbar LOGUEADO izquierda-->
+  
+      <div class="col-6"></div>
+  
+        <nav class="nav navbar-dark col-2 me-0"> <!--Navbar LOGUEADO derecha-->
+          <div class="btn-group">
+            <button type="button" id="navPerfilLogueado" class="btn btn-primary" aria-expanded="false">
+              Perfil
+            </button>
+            <button type="button" id="navCarrito" class="btn btn-primary" aria-expanded="false">
+              Carrito(0)
+            </button>  
+            <button type="button" id="navCerrarSesionLogueado" class="btn btn-primary" aria-expanded="false">
+             Cerrar sesión
+            </button>   
+          </div>
+        </nav> <!--Fin Navbar LOGUEADO derecha-->
+     
+     
+      </div>
+
+      <div class="row" id="navBarAdmin">
+
+        <nav class="nav navbar-dark col-4"> <!--Navbar ADMIN izquierda-->
+            <div class="btn-group">
+              <a class="nav-link" href="#" id="navHomeAdmin">Home</a>
+              <button type="button" id="navListadoAdminProducto" class="btn btn-primary" aria-expanded="false">
+                Listado Productos
+              </button>
+              <button type="button" id="navListarUsuarios" class="btn btn-primary" aria-expanded="false">
+                Listar Usuarios
+              </button>
+            </div>
+          </nav>   <!--Fin Navbar ADMIN izquierda-->
+    
+          <div class="col-6"></div>
+    
+          <nav class="nav navbar-dark col-2 me-0"> <!--Navbar ADMIN derecha-->
+            <div class="btn-group">
+              <button type="button" id="navProductoAdmin" class="btn btn-primary" aria-expanded="false">
+                Alta Producto
+              </button>
+              <button type="button" id="navCerrarSesionAdmin" class="btn btn-primary" aria-expanded="false">
+               Cerrar sesión
+              </button>   
+            </div>
+          </nav> <!--Fin Navbar ADMIN derecha-->
+       
+       
+        </div>
+
+
+    </div>
+     
+      
+            <div class="container" id="container">                 <!--container-->
+
+
+
+              <div class="areaContenido my-5" id="areaRegistro"> <!--área Registro-->
+
+                <div class="display-4 mb-5 cabecera">Crear nueva cuenta de usuario</div>
+                
+                <form class="w-50" name="frmRegistroUsuario" id="frmRegistroUsuario">
+                 
+
+                  <div class="form-group row my-2">
+                    <label for="txtEmail" class="col-4 col-form-label">Correo electrónico</label> 
+                    <div class="col-8">
+                      <input id="txtEmail" name="txtEmail" type="text" class="form-control">
+                    </div>
+                  </div> 
+
+                  <div class="form-group row my-2" id="areaConfirmaMail">
+                    <label for="txtEmail2" class="col-4 col-form-label">Confirme la dirección de correo</label> 
+                    <div class="col-8">
+                      <input id="txtEmail2" name="txtEmail2" type="text" class="form-control">
+                    </div>
+                  </div> 
+
+                  <div class="form-group row my-2">
+                    <label for="txtPassword" class="col-4 col-form-label">Elije contraseña</label> 
+                    <div class="col-8">
+                      <input id="txtPassword" name="txtPassword" type="password" class="form-control">
+                    </div>
+                  </div> 
+
+                  <div class="form-group row my-2 mb-5">
+                    <label for="txtPassword2" class="col-4 col-form-label">Confirma tu contraseña</label> 
+                    <div class="col-8">
+                      <input id="txtPassword2" name="txtPassword2" type="password" class="form-control">
+                    </div>
+                  </div> 
+
+
+                  <div class="form-group row my-2">
+                    <label for="txtNombreUsuario" class="col-4 col-form-label">Nombre Completo</label> 
+                    <div class="col-8">
+                      <input id="txtNombreUsuario" name="txtNombreUsuario" type="text" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group row my-2">
+                    <label for="txtDni" class="col-4 col-form-label">DNI</label> 
+                    <div class="col-8">
+                      <input id="txtDni" name="txtDni" type="text" class="form-control">
+                    </div>
+                  </div>
+                  
+           
+
+                  <div class="form-group row my-2">
+                    <label for="txtDireccion" class="col-4 col-form-label">Dirección</label> 
+                    <div class="col-8">
+                      <input id="txtDireccion" name="txtDireccion" type="text" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="form-group row my-2">
+                    <label class="col-4">Tipo de suscripción</label> 
+                    <div class="col-8">
+                     
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input name="radioSuscripcion" id="radioPremium" type="radio" class="custom-control-input" value="premium" checked> 
+                        <label for="radioPremium" class="custom-control-label">Premium</label>
+                      </div>
+                     
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input name="radioSuscripcion" id="radioGratis" type="radio" class="custom-control-input" value="gratis"> 
+                        <label for="radioGratis" class="custom-control-label">Gratuita</label>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <div class="form-group row my-2">
+                    <div class="offset-4 col-8">
+                      <input name="botonAceptarRegistroUsuario" type="button" class="btn btn-primary w-25" value="Crear"/>
+                    </div>
+                  </div>
+              
+                </form>
+
+              </div> <!--Fin área de registro-->
+         
+              
+            </div> <!--container-->
+      <div id="mensaje">Hola</div>
+      
+      
+    <!--JS Bootstrap-->
+    <script src="js\bootstrap.bundle.min.js"></script>
+    <!--JS Auxiliar-->
+    <script src="js\cookiesandxml.js"></script>
+    <!--JS del grupo de trabajo-->
+    <script src="js\objetos.js"></script>
+    <script src="js\codigo.js"></script>
+</body>
+</html>

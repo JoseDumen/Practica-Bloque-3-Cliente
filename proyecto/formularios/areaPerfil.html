@@ -1,0 +1,77 @@
+<div class="areaContenido my-5" id="areaPerfil"> <!--área Registro-->
+
+    <div class="display-4 mb-5 cabecera">Editar Perfil de Usuario</div>
+    
+    <form class="w-50" name="frmEditaUsuario" id="frmEditaUsuario">
+     
+
+      <div class="form-group row my-2">
+        <label for="txtEmailEd" class="col-4 col-form-label">Correo electrónico</label> 
+        <div class="col-8">
+          <input id="txtEmailEd" name="txtEmailEd" type="text" class="form-control" readonly>
+        </div>
+      </div> 
+
+      <div class="form-group row my-2">
+        <label for="txtPasswordEd" class="col-4 col-form-label">Nueva contraseña</label> 
+        <div class="col-8">
+          <input id="txtPasswordEd" name="txtPasswordEd" type="password" class="form-control">
+        </div>
+      </div> 
+
+      <div class="form-group row my-2 mb-5">
+        <label for="txtPasswordEd2" class="col-4 col-form-label">Confirma tu nueva contraseña</label> 
+        <div class="col-8">
+          <input id="txtPasswordEd2" name="txtPassword2" type="password" class="form-control">
+        </div>
+      </div> 
+
+
+      <div class="form-group row my-2">
+        <label for="txtNombreUsuarioEd" class="col-4 col-form-label">Nombre Completo</label> 
+        <div class="col-8">
+          <input id="txtNombreUsuarioEd" name="txtNombreUsuarioEd" type="text" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group row my-2">
+        <label for="txtDniEd" class="col-4 col-form-label">DNI</label> 
+        <div class="col-8">
+          <input id="txtDniEd" name="txtDniEd" type="text" class="form-control">
+        </div>
+      </div>
+      
+
+
+      <div class="form-group row my-2">
+        <label for="txtDireccionEd" class="col-4 col-form-label">Dirección</label> 
+        <div class="col-8">
+          <input id="txtDireccionEd" name="txtDireccionEd" type="text" class="form-control">
+        </div>
+      </div>
+
+      <div class="form-group row my-2">
+        <label class="col-4">Tipo de suscripción</label> 
+        <div class="col-8">
+         
+          <div class="custom-control custom-radio custom-control-inline">
+            <input name="radioSuscripcionEd" id="radioPremiumEd" type="radio" class="custom-control-input" value="premium"> 
+            <label for="radioPremiumEd" class="custom-control-label">Premium</label>
+          </div>
+         
+          <div class="custom-control custom-radio custom-control-inline">
+            <input name="radioSuscripcionEd" id="radioGratisEd" type="radio" class="custom-control-input" value="gratis"> 
+            <label for="radioGratisEd" class="custom-control-label">Gratuita</label>
+          </div>
+        </div>
+      </div>
+     
+      <div class="form-group row my-2">
+        <div class="offset-4 col-8">
+          <input name="botonAceptarEdicionUsuario" id="botonAceptarEdicionUsuario" type="button" class="btn btn-primary w-25" value="Editar"/>
+        </div>
+      </div>
+  
+    </form>
+
+  </div> <!--Fin área de registro-->
